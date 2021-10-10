@@ -24,7 +24,7 @@ from sqlalchemy.orm import relationship, column_property
 from sqlalchemy.dialects.mysql import LONGTEXT
 
 from app.models.base import BaseModel
-from app.utils.ss58 import ss58_encode, ss58_encode_account_index
+from substrateinterface.utils.ss58 import ss58_encode, ss58_encode_account_index
 from app.settings import LOG_TYPE_AUTHORITIESCHANGE, SUBSTRATE_ADDRESS_TYPE
 
 
