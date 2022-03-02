@@ -42,7 +42,8 @@ DOGPILE_CACHE_SETTINGS = {
     'default_detail_cache_expiration_time': 3600,
     'host': os.environ.get("DOGPILE_CACHE_HOST", "redis"),
     'port': os.environ.get("DOGPILE_CACHE_PORT", 6379),
-    'db': os.environ.get("DOGPILE_CACHE_DB", 10)
+    'db': os.environ.get("DOGPILE_CACHE_DB", 0),
+    'password': os.environ.get("DOGPILE_CACHE_PASSWORD", '')
 }
 
 
